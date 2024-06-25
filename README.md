@@ -1,70 +1,97 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# NewsApp
 
-In the project directory, you can run:
+NewsApp is a dynamic web application that fetches and displays the latest news articles using the News API. The app is built with React and includes features like navigation through a Home and About Us page, paginated news articles with Previous and Next buttons, and it displays live and real news and events going around the world.
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup and Installation](#setup-and-installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contact](#contact)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Home Page:** Displays the latest news articles fetched from the News API.
+- **About Us Page:** Provides information about the app.
+- **Navigation Bar:** Easy navigation between Home and About Us pages.
+- **Pagination:** Navigate through news articles using Previous and Next buttons.
+- **Responsive Design:** Ensures a seamless experience across different devices.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **Frontend:** React, HTML, CSS
+- **API:** News API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup and Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/ronaksharma77/NewsApp.git
+    cd NewsApp
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies:**
+    ```sh
+    npm install
+    ```
 
-### `npm run eject`
+3. **Set up environment variables:**
+    Create a `.env` file in the root directory and add your News API key:
+    ```env
+    REACT_APP_NEWS_API_KEY=your_news_api_key
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Run the application:**
+    ```sh
+    npm start
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    The application will be served on `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Home Page:**
+  - Displays the latest news articles.
+  - Use the Previous and Next buttons at the bottom to navigate through the pages of articles.
 
-## Learn More
+- **About Us Page:**
+  - Provides information about the NewsApp and its features. It is left empty as of now.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+NewsApp/
+│
+├── public/                # Public assets
+│   ├── index.html         # Main HTML file
+│   └── ...                # Other public files
+│
+├── src/                   # Source code
+│   ├── components/        # React components
+│   │   ├── Navbar.js      # Navigation bar component
+│   │   ├── News.js    # Component to display news articles
+│   │   └── ...            # Other components
+│   │
+│   ├── pages/             # Page components
+│   │   ├── Home.js        # Home page component
+│   │   └── About.js       # About Us page component
+│   │
+│   ├── App.js             # Main App component
+│   ├── index.js           # Entry point for the frontend
+│   └── ...                # Other source files
+│
+└── README.md              # This README file
+```
 
-### Code Splitting
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+For any inquiries or feedback, please reach out to:
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Name:** Ronak Sharma
+- **Email:** ronaksharma.rk77@gmail.com
+- **GitHub:** [ronaksharma77](https://github.com/ronaksharma77)
